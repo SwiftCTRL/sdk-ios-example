@@ -49,4 +49,62 @@ open -a Xcode SwitchCTRLExample.xcworkspace
 
 In QRViewController.swift (line 14), change private var userToken to the token you got
 
-## SDK calls are there: SwitchCtrl.shared*
+## SDK calls
+
+### SwitchCtrl.shared
+
+
+**initialize(with: String, delegate: SwiftCtrlObserver)**
+
+This method is the entry point to link/communicate with the SwiftCTRL infrastructure and services.
+
+```
+- with userToken: your userToken that you already acquired
+- delegate: a reference to an instance of SwiftCtrlObserver object
+```	
+
+**registerForQRCode(userToken: String)**
+
+This method launch the QRCode generation for the logged in user and will start notifying your app of new QRcode available to display.
+
+```
+- userToken: your userToken that you already acquired
+```	
+
+**unregisterForQRCode(userToken: String)**
+
+This method stop the SDK from generating new QRCode and unregister your delegate observer from the sdk
+
+```
+- userToken: your userToken that you already acquired
+```	
+
+
+### SwiftCtrlObserver
+
+**didReceiveQRCode(qrView: UIImageView)**
+
+This method stop the SDK from generating new QRCode and unregister your delegate observer from the sdk
+
+```
+- qrView: UIImageView containing the new available QRCode to display in your app
+```	
+
+**didFinishInitialization()**
+
+This callback inform the calling app that the SDK is initialized and ready to generate QRCodes.
+
+In this method, you need to call:
+
+```
+SwiftCtrl.shared.registerForQRCode(userToken: String)
+```	
+
+To be able to start/receive new available QRCode.
+
+
+**reportError(error: String)**
+
+This callback will inform the calling app of any error happening from the SDK.
+
+**Not implemented at the moment** Signature may change.
