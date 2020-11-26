@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (5.3.0)
+  - SwiftCTRLSDK (0.1.1):
+    - Alamofire (= 5.3)
+
+DEPENDENCIES:
+  - SwiftCTRLSDK (~> 0.1.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+  https://github.com/SwiftCTRL/Podspecs.git:
+    - SwiftCTRLSDK
+
+SPEC CHECKSUMS:
+  Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  SwiftCTRLSDK: 47df2e229d87fc8f334cfab9a470fc356d27169e
+
+PODFILE CHECKSUM: 7834cdcb3ac0e1237c24e8fa54117ae024784dd7
+
+COCOAPODS: 1.9.1
