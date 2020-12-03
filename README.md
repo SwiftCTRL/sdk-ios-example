@@ -79,6 +79,16 @@ This method stop the SDK from generating new QRCode and unregister your delegate
 - userToken: your userToken that you already acquired
 ```	
 
+**disconnet()**
+
+```
+SwiftCtrl.shared.disconnect()
+```	
+
+This will forget the logged in user amd all his data.
+YOU MUST CALL THIS WHEN A USER LOGOUT
+
+
 
 ### SwiftCtrlObserver
 
@@ -108,13 +118,4 @@ To be able to start/receive new available QRCode.
 This callback will inform the calling app of any error happening from the SDK.
 
 **Not implemented at the moment** Signature may change.
-
-
-
-```
-SwiftCtrl.shared.disconnet()
-```	
-
-This will forget the logged in user amd all his data.
-YOU MUST CALL THIS WHEN A USER LOGOUT
 
