@@ -13,7 +13,7 @@
 		095585C72551E290009B632C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095585C62551E290009B632C /* Assets.xcassets */; };
 		095585CA2551E290009B632C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095585C82551E290009B632C /* LaunchScreen.storyboard */; };
 		095585FE2551E490009B632C /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095585FD2551E490009B632C /* QRViewController.swift */; };
-		B1303069C9B624859205D0E3 /* Pods_SwitchCTRLExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C619327BF93D991EA56318 /* Pods_SwitchCTRLExample.framework */; };
+		44AED7B854CAD36A2DEDF3B4 /* Pods_SwitchCTRLExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81252103E6AE90E347AD3303 /* Pods_SwitchCTRLExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		095585C92551E290009B632C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		095585CB2551E290009B632C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		095585FD2551E490009B632C /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
-		B9C619327BF93D991EA56318 /* Pods_SwitchCTRLExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwitchCTRLExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7F024568F01E29F3374EDA0 /* Pods-SwitchCTRLExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitchCTRLExample.release.xcconfig"; path = "Target Support Files/Pods-SwitchCTRLExample/Pods-SwitchCTRLExample.release.xcconfig"; sourceTree = "<group>"; };
-		F9FFC66BAA2B689EDE4B9F59 /* Pods-SwitchCTRLExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitchCTRLExample.debug.xcconfig"; path = "Target Support Files/Pods-SwitchCTRLExample/Pods-SwitchCTRLExample.debug.xcconfig"; sourceTree = "<group>"; };
+		81252103E6AE90E347AD3303 /* Pods_SwitchCTRLExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwitchCTRLExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CB8DE071B73C3B7213C4E3 /* Pods-SwitchCTRLExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitchCTRLExample.release.xcconfig"; path = "Target Support Files/Pods-SwitchCTRLExample/Pods-SwitchCTRLExample.release.xcconfig"; sourceTree = "<group>"; };
+		C37997B324AEFDC6DA928A52 /* Pods-SwitchCTRLExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitchCTRLExample.debug.xcconfig"; path = "Target Support Files/Pods-SwitchCTRLExample/Pods-SwitchCTRLExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1303069C9B624859205D0E3 /* Pods_SwitchCTRLExample.framework in Frameworks */,
+				44AED7B854CAD36A2DEDF3B4 /* Pods_SwitchCTRLExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +48,7 @@
 				095585BC2551E28E009B632C /* SwitchCTRLExample */,
 				095585BB2551E28E009B632C /* Products */,
 				1E6337C9781C7C3C6E500ACB /* Pods */,
-				9BA5208389835DCE2E36BA20 /* Frameworks */,
+				26F6D43207F09C38D03B3606 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,16 +77,16 @@
 		1E6337C9781C7C3C6E500ACB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F9FFC66BAA2B689EDE4B9F59 /* Pods-SwitchCTRLExample.debug.xcconfig */,
-				E7F024568F01E29F3374EDA0 /* Pods-SwitchCTRLExample.release.xcconfig */,
+				C37997B324AEFDC6DA928A52 /* Pods-SwitchCTRLExample.debug.xcconfig */,
+				B9CB8DE071B73C3B7213C4E3 /* Pods-SwitchCTRLExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		9BA5208389835DCE2E36BA20 /* Frameworks */ = {
+		26F6D43207F09C38D03B3606 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9C619327BF93D991EA56318 /* Pods_SwitchCTRLExample.framework */,
+				81252103E6AE90E347AD3303 /* Pods_SwitchCTRLExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,11 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 095585E42551E290009B632C /* Build configuration list for PBXNativeTarget "SwitchCTRLExample" */;
 			buildPhases = (
-				E2839BE7E11D3658DFB9493E /* [CP] Check Pods Manifest.lock */,
+				61A2E42454AA8842465B8C26 /* [CP] Check Pods Manifest.lock */,
 				095585B62551E28E009B632C /* Sources */,
 				095585B72551E28E009B632C /* Frameworks */,
 				095585B82551E28E009B632C /* Resources */,
-				9D5AC14B67DC63F986912854 /* [CP] Embed Pods Frameworks */,
+				3EC7FFE4775ECD4088BEB5C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,7 +159,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9D5AC14B67DC63F986912854 /* [CP] Embed Pods Frameworks */ = {
+		3EC7FFE4775ECD4088BEB5C3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,7 +176,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwitchCTRLExample/Pods-SwitchCTRLExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E2839BE7E11D3658DFB9493E /* [CP] Check Pods Manifest.lock */ = {
+		61A2E42454AA8842465B8C26 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,7 +353,7 @@
 		};
 		095585E52551E290009B632C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9FFC66BAA2B689EDE4B9F59 /* Pods-SwitchCTRLExample.debug.xcconfig */;
+			baseConfigurationReference = C37997B324AEFDC6DA928A52 /* Pods-SwitchCTRLExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -375,7 +375,7 @@
 		};
 		095585E62551E290009B632C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7F024568F01E29F3374EDA0 /* Pods-SwitchCTRLExample.release.xcconfig */;
+			baseConfigurationReference = B9CB8DE071B73C3B7213C4E3 /* Pods-SwitchCTRLExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

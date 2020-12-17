@@ -35,7 +35,6 @@ class QRViewController: UIViewController {
 
 extension QRViewController: SwiftCtrlObserver {
 
-    
     func didReceiveQRCode(qrView: UIImageView) {
         
         DispatchQueue.main.async { [weak self] in
@@ -62,9 +61,9 @@ extension QRViewController: SwiftCtrlObserver {
         SwiftCtrl.shared.registerForQRCode(userToken: userToken)
     }
     
-    func reportError(error: Error) {
+    func reportError(error: NSError) {
         DispatchQueue.main.async {
-            let alert = UIAlertController(title: "SwiftCTRL Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "SwiftCTRL Error", message: error.description, preferredStyle: UIAlertController.Style.alert)
 
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { _ in
                 //Cancel Action
