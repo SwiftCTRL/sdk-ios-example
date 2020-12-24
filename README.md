@@ -2,35 +2,37 @@
 
 ## Get system & refresh token
 ```
-REFRESH_TOKEN=$(jq -r .refresh_token <<< $(curl -D /dev/stderr https://api.sandbox.swiftctrl.com/swift-directory/auth/system-access-token \
-  -H 'Content-type: application/json' --data-binary @- << EOF
+REFRESH_JWT=$(curl -D /dev/stderr https://api.sandbox.swiftctrl.com/auth/system-access-token \
+  -H 'Content-type: application/json' --data-binary @- << EOF | jq -r .refresh_token
 {
   "license": "my_licence",
   "secret":"my_secret"
 }
 EOF
-))
+)
+
+printf "Refresh JWT:\n%s\n" $REFRESH_JWT
 ```
 
 ## Get user token for user `user_id_to_use`
 ```
-USER_TOKEN=$(jq -r . <<< $(curl -D /dev/stderr https://api.sandbox.swiftctrl.com/swift-directory/auth/user-access-token \
+USER_JWT=$(curl -D /dev/stderr https://api.sandbox.swiftctrl.com/auth/user-access-token \
   -H 'Content-type: application/json' \
-  -H "Authorization: Bearer ${REFRESH_TOKEN}" \
---data-binary @- << EOF
+  -H "Authorization: Bearer ${REFRESH_JWT}" \
+--data-binary @- << EOF | jq -r .
 {
-  "user_id": user_id_to_use
+  "client_user_id": "email@example.com"
 }
 EOF
-))
+)
 
-printf "User Token:\n%s\n" $USER_TOKEN
+printf "User JWT:\n%s\n" $USER_JWT
 ```
 
 ## To get a new system refresh_token
 ```
-REFRESH_TOKEN=$(curl -D /dev/stderr https://api.sandbox.swiftctrl.com/swift-directory/auth/system-access-token \
-  -H "Authorization: Bearer ${REFRESH_TOKEN}" | jq -r .)
+REFRESH_JWT=$(curl -D /dev/stderr https://api.sandbox.swiftctrl.com/auth/system-access-token \
+  -H "Authorization: Bearer ${REFRESH_JWT}" | jq -r .)
 ```
 
 # Mobile
