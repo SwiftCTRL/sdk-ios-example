@@ -1,16 +1,16 @@
 PODS:
-  - SwiftCTRLSDK (0.1.10)
+  - SwiftCTRLSDK (0.1.11)
 
 DEPENDENCIES:
-  - SwiftCTRLSDK (~> 0.1.10)
+  - SwiftCTRLSDK (~> 0.1.11)
 
 SPEC REPOS:
   https://github.com/SwiftCTRL/Podspecs.git:
     - SwiftCTRLSDK
 
 SPEC CHECKSUMS:
-  SwiftCTRLSDK: a1fabf8e8a4536b1339c6385b9b32d35f854b13c
+  SwiftCTRLSDK: 252dc0ffb00cbb350ddba00d735ecdeb6c3941e7
 
-PODFILE CHECKSUM: d39ccc75f4fe78ef61e70afbbddce73cfade49db
+PODFILE CHECKSUM: afa5d44340edb2766827b121698959c67f0183b2
 
 COCOAPODS: 1.9.1
