@@ -9,6 +9,6 @@ target 'SwitchCTRLExample' do
   use_frameworks!
 
   # Pods for SwitchCTRLExample
-  pod 'SwiftCTRLSDK', '~> 0.1.12'
+  pod 'SwiftCTRLSDK', '~> 0.1.13'
 
 end

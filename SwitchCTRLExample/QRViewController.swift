@@ -56,6 +56,10 @@ extension QRViewController: SwiftCtrlObserver {
         }
     }
     
+    func didReceiveQRCode(qrBase64Image: String) {
+        
+    }
+    
     func didFinishInitialization() {
         print("yes didFinishInitialization")
         SwiftCtrl.shared.registerForQRCode(userToken: userToken)

@@ -63,7 +63,7 @@ This method is the entry point to link/communicate with the SwiftCTRL infrastruc
 ```
 - with userToken: your userToken that you already acquired
 - delegate: a reference to an instance of SwiftCtrlObserver object
-```	
+```
 
 **registerForQRCode(userToken: String)**
 
@@ -71,7 +71,7 @@ This method launch the QRCode generation for the logged in user and will start n
 
 ```
 - userToken: your userToken that you already acquired
-```	
+```
 
 **unregisterForQRCode(userToken: String)**
 
@@ -79,13 +79,13 @@ This method stop the SDK from generating new QRCode and unregister your delegate
 
 ```
 - userToken: your userToken that you already acquired
-```	
+```
 
 **disconnet()**
 
 ```
 SwiftCtrl.shared.disconnect()
-```	
+```
 
 This will forget the logged in user amd all his data.
 YOU MUST CALL THIS WHEN A USER LOGOUT
@@ -96,11 +96,19 @@ YOU MUST CALL THIS WHEN A USER LOGOUT
 
 **didReceiveQRCode(qrView: UIImageView)**
 
-This method stop the SDK from generating new QRCode and unregister your delegate observer from the sdk
+This method is called when a new QRCode is available in UIImageView format
 
 ```
 - qrView: UIImageView containing the new available QRCode to display in your app
-```	
+```
+
+**didReceiveQRCode(qrBase64Image: String)**
+
+This method is called when a new QRCode is available in Base64 format
+
+```
+- qrBase64Image: String containing the new Base64 available QRCode to display in your app
+```
 
 **didFinishInitialization()**
 
@@ -110,7 +118,7 @@ In this method, you need to call:
 
 ```
 SwiftCtrl.shared.registerForQRCode(userToken: String)
-```	
+```
 
 To be able to start/receive new available QRCode.
 
@@ -120,4 +128,3 @@ To be able to start/receive new available QRCode.
 This callback will inform the calling app of any error happening from the SDK.
 
 **Not implemented at the moment** Signature may change.
-
