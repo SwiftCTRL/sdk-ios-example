@@ -60,6 +60,12 @@ extension QRViewController: SwiftCtrlObserver {
         
     }
     
+    // Bytes Array
+    func didReceiveQRCode(qrBytesArray: [UInt8]) {
+        
+    }
+
+    
     func didFinishInitialization() {
         print("yes didFinishInitialization")
         SwiftCtrl.shared.registerForQRCode(userToken: userToken)
