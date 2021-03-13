@@ -110,6 +110,15 @@ This method is called when a new QRCode is available in Base64 format
 - qrBase64Image: String containing the new Base64 available QRCode to display in your app
 ```
 
+**didReceiveQRCode(qrBytesArray: [UInt8])**
+
+This method is called when a new QRCode is available in bytes array format
+
+```
+- qrBytesArray: String containing the new bytes array available QRCode to display in your app
+```
+
+
 **didFinishInitialization()**
 
 This callback inform the calling app that the SDK is initialized and ready to generate QRCodes.
