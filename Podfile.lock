@@ -1,12 +1,12 @@
 PODS:
   - rapidjson (1.1.0)
-  - SwiftCTRLSDK (0.1.17):
+  - SwiftCTRLSDK (0.1.18):
     - Tink (~> 1.5.0)
   - Tink (1.5.0):
     - rapidjson (~> 1.1.0)
 
 DEPENDENCIES:
-  - SwiftCTRLSDK (~> 0.1.17)
+  - SwiftCTRLSDK (~> 0.1.18)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -17,9 +17,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   rapidjson: 926ddeea70d7a0987b6d746cd9fa51f165467cd3
-  SwiftCTRLSDK: c2a98379fc78ce471e15de453b575c02fc4cf0a0
+  SwiftCTRLSDK: 1a700eb900bc48f161245e592229694752eb714d
   Tink: 0cc396beb2288f005fb4db9e027c0ee975c7728a
 
-PODFILE CHECKSUM: 7326f0ad10288b1eefaf497899383046f68c261e
+PODFILE CHECKSUM: cafca61e787081a3183909e28f24d0f12b2d85cc
 
 COCOAPODS: 1.9.1
